@@ -118,12 +118,12 @@ function sum(num1,num2){
      console.log("*************************")
      // Write a function called footballPoints that returns the number of points a football team has obtained so far, the first argument for this function is the number of games a team has won, the second argument is the number of games the team has drawn and the third arguement is the number of times the team has lost. 3 points are awarded for every game won, 1 point for every game draw and 0 points for every game lost.
      function footballPoints(won,drawn,lost){
-         var wonpoints=won*3;
-         var drawnpoints=drawn*1;
-         var lostpoints=lost*0;
-         var totalpoints=wonpoints+drawnpoints+lostpoints;
-         console.log("You earned:"&(totalpoints)+ "points")
+         console.log((won*3)+(drawn*1)+(lost-lost))
+         
      }
+
+     footballPoints(2,1,4)
+     console.log("*************************")
      // Write a function called isEven that takes in a number as an argument, the function returns true if a number is even and returns false if a number is odd. Use this function to log to the console all the even numbers between 0 and 101.
      function isEven(num){
          if(num%2==0){
