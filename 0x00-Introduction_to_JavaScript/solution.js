@@ -50,7 +50,7 @@ function sum(num1,num2){
                      
                  }
                  console.log( basketBallPoints(20,30))
-                console.log( ****************)
+                console.log( "****************")
                  // Given two numbers, write a function called isSumMoreThan100 return true if their sum is greater than 100 and false if their sum is less than 100.
                  function isSumMoreThan100(num1,num2){
                     var num1=num1;
