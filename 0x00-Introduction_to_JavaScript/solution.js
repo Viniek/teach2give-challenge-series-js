@@ -102,18 +102,20 @@ function sum(num1,num2){
      // Write a function called least that takes in three numbers as arguments and returns the least among the three. If they are all equal, it should return any of them.
      function least(num1,num2,num3){
          if(num1<num2&& num1<num2){
-             console.log(num1) 
+             return num1; 
          }
          else if(num2<num1&&num2<num3){
-             console.log(num2) 
+             return num2; 
          }
          else if(num3<num1&&num3<num2){
-             console.log(num3) 
+             return num3; 
          }
          else if(num1==num2==num3){
-            console.log(num1||num2||num3)
+            return num1||num2||num3;
          }
      }
+     console.log(least(80,90,100))
+     console.log("*************************")
      // Write a function called footballPoints that returns the number of points a football team has obtained so far, the first argument for this function is the number of games a team has won, the second argument is the number of games the team has drawn and the third arguement is the number of times the team has lost. 3 points are awarded for every game won, 1 point for every game draw and 0 points for every game lost.
      function footballPoints(won,drawn,lost){
          var wonpoints=won*3;
