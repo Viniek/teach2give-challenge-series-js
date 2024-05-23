@@ -53,8 +53,6 @@ function sum(num1,num2){
                 console.log( "****************")
                  // Given two numbers, write a function called isSumMoreThan100 return true if their sum is greater than 100 and false if their sum is less than 100.
                  function isSumMoreThan100(num1,num2){
-                    var num1=num1;
-                     var num2=num2;
                      var sum=num1+num2;
                      if(sum>100){
                          return "true"
@@ -64,13 +62,11 @@ function sum(num1,num2){
                      }
                  }
                  console.log(isSumMoreThan100(28,49))
-
-                 
+                 console.log("********")                
      
  // Given that 1 minute is equal to 60 seconds. Write a function called convertToSeconds that takes in the number of minutes as an arguments and returns the seconds equivalent in the format x seconds e.g 120 seconds, 300 seconds. e.t.c. If the seconds equivalent is 0, then it should just return 0, if the seconds equivalent is 1, then it should return 1, if the seconds equivalent is more than 1, then it should return with the string "seconds"
            
      function convertToSeconds(minutes){
-         var minutes=minutes;
          var seconds=minutes*60;
          if(seconds==0){
              return 0;
@@ -79,10 +75,13 @@ function sum(num1,num2){
              return 1;
          }
          else if(seconds>1){
-             return "&seconds+'seconds'"
+             return seconds+" "+'seconds'
          }
-         console.log("Ttal time is "&(seconds)+"seconds")
+         
      }
+     console.log(convertToSeconds(50));
+    //  *****************
+   
      // Write a function called greater that takes in three numbers as arguments and returns the greatest number among the three. If they are all equal, it should return any of them.
      function greater(num1,num2,num3){
          if(num1>num2&&num1>num3){
