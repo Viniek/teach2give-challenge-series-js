@@ -4,6 +4,15 @@ function sum(num1,num2){
  }
   sum(1,2)
   console.log("****************************************************************")
+//   
+function nextNumber(number) {
+    
+    console.log(number + 1)
+}
+
+nextNumber(99)
+
+
  //Write a function called rectanglePerimeter that takes in the length and width as arguments and returns the perimeter of the rectangle.
   function rectanglePerimeter (length,width){
   let rectanglePerimeterr=(length*2)+(width*2)
@@ -125,11 +134,15 @@ function sum(num1,num2){
      footballPoints(2,1,4)
      console.log("*************************")
      // Write a function called isEven that takes in a number as an argument, the function returns true if a number is even and returns false if a number is odd. Use this function to log to the console all the even numbers between 0 and 101.
-     function isEven(num){
-         if(num%2==0){
-             console.log("even") 
-         }
-         else if(num%2!==0){
-             console.log("odd") 
-         }
-     }
+     function isEven(num) {
+        return num % 2 === 0;
+    }
+    
+    // Log even numbers between 0 and 101
+    for (let i = 0; i <= 101; i++) {
+        if (isEven(i)) {
+            console.log(i);
+        }
+    }
+isEven(23)    
+    
