@@ -80,23 +80,25 @@ function sum(num1,num2){
          
      }
      console.log(convertToSeconds(50));
-    //  *****************
+    console.log("**************************") 
    
      // Write a function called greater that takes in three numbers as arguments and returns the greatest number among the three. If they are all equal, it should return any of them.
      function greater(num1,num2,num3){
          if(num1>num2&&num1>num3){
-             console.Log(num1) 
+             return num1 
          }
         else if(num2>num1&&num2>num3){
-         console.Log(num2points)
+         return num2
          }
          else if(num3>num1&&num3>num2){
-             console.Log(num3)
+             return num3
          }
          else if(num1==num2==num3){
-             console.log(num1||num2||num3) 
+            return num1||num2||num3
          }   
      }
+     console.log(greater(40,50,60))
+     console.log("**************")
      // Write a function called least that takes in three numbers as arguments and returns the least among the three. If they are all equal, it should return any of them.
      function least(num1,num2,num3){
          if(num1<num2&& num1<num2){
