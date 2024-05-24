@@ -1,26 +1,27 @@
-// Create a function called sum that takes in two numbers as arguments and returns their sum.
+// Sum of two numbers
 function sum(num1,num2){
    console.log(num1+num2) 
  }
   sum(1,2)
   console.log("****************************************************************")
-//   
+//Return the next number from the number passed   
 function nextNumber(number) {
     
     console.log(number + 1)
 }
 
 nextNumber(99)
+console.log("****************************************************************")
 
 
- //Write a function called rectanglePerimeter that takes in the length and width as arguments and returns the perimeter of the rectangle.
+ //Find perimeter of a rectangle
   function rectanglePerimeter (length,width){
   let rectanglePerimeterr=(length*2)+(width*2)
      console.log(rectanglePerimeterr)
      }
   rectanglePerimeter(10,2)
      console.log("****************************************************************")
-     // Write a function called returnSomethingToMe that returns the string "something" followed by a space " " followed by the string that was passed into the function.
+     // Return something to me
      function returnSomethingToMe(string1){
          thing1="something " + string1
          console.log(thing1)
@@ -31,7 +32,7 @@ nextNumber(99)
  
      console.log("****************************************************************")
  
-     // Bob and Jane want to know who has a bigger BMI than the other. Write a function called greaterBMI that will take ibon as the first arguement the BMI of Bob and as the second Argument the BMI of Jane. If Bob has a bigger BMI than jane, your function should return the string "Bob", if Jane has a bigger BMI than Bob, it should return the string "Jane", if they have the same BMI, it should return the string "Equal".
+     // Bob's BMI vs Jane's BMI
      function  greaterBMI(bobBMI,janeBMI){
          if(bobBMI > janeBMI){
              return "Bob";
@@ -48,9 +49,9 @@ nextNumber(99)
              const bobBMI=40;
              const janeBMI=50;
              console.log(greaterBMI(bobBMI,janeBMI));
-            //   *********************
+             console.log("****************************************************************")
  
-                 // You are counting points for a basketball game, 2 points are awarded for every 2 pointer and 3 points for every 3 pointer. Write a function called basketBallPoints, the first argument should be the number of two pointers scored by the team and the second argument the number of three pointers scored by the team. This function returns the final points for the team.
+                 // Basketball points
                  function basketBallPoints(num2,num3){                    
                      var num2points=num2*2;
                      var num3points=num3*3;
@@ -59,8 +60,8 @@ nextNumber(99)
                      
                  }
                  console.log( basketBallPoints(20,30))
-                console.log( "****************")
-                 // Given two numbers, write a function called isSumMoreThan100 return true if their sum is greater than 100 and false if their sum is less than 100.
+                 console.log("****************************************************************")
+                 // Less than 100
                  function isSumMoreThan100(num1,num2){
                      var sum=num1+num2;
                      if(sum>100){
@@ -71,10 +72,9 @@ nextNumber(99)
                      }
                  }
                  console.log(isSumMoreThan100(28,49))
-                 console.log("********")                
+                 console.log("****************************************************************")             
      
- // Given that 1 minute is equal to 60 seconds. Write a function called convertToSeconds that takes in the number of minutes as an arguments and returns the seconds equivalent in the format x seconds e.g 120 seconds, 300 seconds. e.t.c. If the seconds equivalent is 0, then it should just return 0, if the seconds equivalent is 1, then it should return 1, if the seconds equivalent is more than 1, then it should return with the string "seconds"
-           
+ //  Convert minutes to second
      function convertToSeconds(minutes){
          var seconds=minutes*60;
          if(seconds==0){
@@ -89,9 +89,9 @@ nextNumber(99)
          
      }
      console.log(convertToSeconds(50));
-    console.log("**************************") 
+     console.log("****************************************************************")
    
-     // Write a function called greater that takes in three numbers as arguments and returns the greatest number among the three. If they are all equal, it should return any of them.
+     // Greater among the three
      function greater(num1,num2,num3){
          if(num1>num2&&num1>num3){
              return num1 
@@ -107,8 +107,8 @@ nextNumber(99)
          }   
      }
      console.log(greater(40,50,60))
-     console.log("**************")
-     // Write a function called least that takes in three numbers as arguments and returns the least among the three. If they are all equal, it should return any of them.
+     console.log("****************************************************************")
+     //Less among the three
      function least(num1,num2,num3){
          if(num1<num2&& num1<num2){
              return num1; 
@@ -123,22 +123,23 @@ nextNumber(99)
             return num1||num2||num3;
          }
      }
+
+
      console.log(least(80,90,100))
-     console.log("*************************")
-     // Write a function called footballPoints that returns the number of points a football team has obtained so far, the first argument for this function is the number of games a team has won, the second argument is the number of games the team has drawn and the third arguement is the number of times the team has lost. 3 points are awarded for every game won, 1 point for every game draw and 0 points for every game lost.
+     console.log("****************************************************************")
+     // Football points
      function footballPoints(won,drawn,lost){
          console.log((won*3)+(drawn*1)+(lost-lost))
          
      }
-
      footballPoints(2,1,4)
-     console.log("*************************")
-     // Write a function called isEven that takes in a number as an argument, the function returns true if a number is even and returns false if a number is odd. Use this function to log to the console all the even numbers between 0 and 101.
+     console.log("****************************************************************")
+
+
+     // Even numbers
      function isEven(num) {
         return num % 2 === 0;
     }
-    
-    // Log even numbers between 0 and 101
     for (let i = 0; i <= 101; i++) {
         if (isEven(i)) {
             console.log(i);
